@@ -16,6 +16,7 @@ import { OthersComponent } from './components/others/others.component';
 import { LoginComponent } from './components/login/login.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { AdoptFormComponent } from './components/adopt-form/adopt-form.component';
+import { PetsProfileComponent } from './components/pets-profile/pets-profile.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { AdoptFormComponent } from './components/adopt-form/adopt-form.component
     OthersComponent,
     LoginComponent,
     SignupComponent,
-    AdoptFormComponent
+    AdoptFormComponent,
+    PetsProfileComponent
   ],
   imports: [
     BrowserModule,

@@ -1,14 +1,15 @@
-<div>
+<div class = "container-fluid">
     <p>we're looking for new homes</p>
-</div>
-<div class="row row-cols-1 row-cols-md-3 g-4">
-    <div class="col" *ngFor="let cat of datacat">
-        <div class="card h-100">
-            <img src="https://i.guim.co.uk/img/media/26392d05302e02f7bf4eb143bb84c8097d09144b/446_167_3683_2210/master/3683.jpg?width=1200&quality=85&auto=format&fit=max&s=a52bbe202f57ac0f5ff7f47166906403" class="card-img-top" alt="cat">
-            <div class="card-body">
-                <h5 class="card-title">{{cat.name}}</h5>
-                <p class="card-text">{{cat.age}}</p>
-                <p class="card-text">{{cat.description}}</p>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col" *ngFor="let cat of datacat">
+            <div class="card h-100" style="width: 30rem; height: 23rem" >
+                <img class = "card-img-top" [src]="cat.img">
+                <div class="card-body">
+                    <h5 class="card-title">{{cat.name}}</h5>
+                    <p class="card-text">{{cat.age}}</p>
+                    <p class="card-text">{{cat.description}}</p>
+                </div>
+                <a [href]="'/cats/'+cat.id"> Read my profile </a>
             </div>
         </div>
     </div>

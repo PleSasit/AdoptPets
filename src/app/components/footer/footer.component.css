@@ -1,0 +1,37 @@
+.d-flex {
+    background-color: #E6B1B1;
+}
+
+.sec {
+    background-color: #f5f0d3;
+}
+
+.aboutus {
+    font-style:normal;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.adopt {
+    font-style:normal;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.useful {
+    font-style:normal;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.contact {
+    font-style:normal;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.foot {
+    text-align: center;
+    font-size: 100%;
+    background-color: #E6B1B1;
+}

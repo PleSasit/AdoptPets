@@ -12,6 +12,7 @@ import { LoginComponent } from './components/login/login.component'
 import { NavbarComponent } from './components/navbar/navbar.component'
 import { OthersComponent } from './components/others/others.component'
 import { SignupComponent } from './components/signup/signup.component'
+import { PetsProfileComponent } from './components/pets-profile/pets-profile.component'
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: '/home' }, 
@@ -25,6 +26,9 @@ const routes: Routes = [
   { path: 'cats', component: CatsComponent },
   { path: 'others', component: OthersComponent },
   { path: 'signup', component: SignupComponent },
+  { path: 'cats/:id', component: PetsProfileComponent },
+  { path: 'dogs/:id', component: PetsProfileComponent },
+  { path: 'others/:id', component: PetsProfileComponent },
 
 
 ];

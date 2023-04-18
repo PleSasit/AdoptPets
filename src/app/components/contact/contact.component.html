@@ -1,1 +1,16 @@
-<p>contact works!</p>
+<div class="container">
+    <div align="center">
+        <h1>Contact Us</h1>
+        <h2>We will get back to you as soon as we can! </h2>
+        <h2>For urgent case please contact our Call center team +0123456789</h2>
+
+        <input type="text" placeholder="Name" [(ngModel)]="name"/>
+        <input type="text" placeholder="Email" [(ngModel)]="email"/>
+        <input type="text" placeholder="Phone" [(ngModel)]="phone"/>
+        <input type="text" placeholder="We'd love To Hear From You"[(ngModel)]="message"/>
+
+        <div class="clearfix">
+            <button type="button" class="button" (click)="send()">Send</button>
+        </div>
+  </div>
+</div>

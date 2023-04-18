@@ -1,1 +1,45 @@
-<p>adopt-form works!</p>
+<div class="container">
+  <div class="center">
+    <h1 class="adopt">Adoption Form</h1>
+    <div>
+      <table class="commom-form">
+        <tr>
+          <td>
+            <input class="stext" type="text" placeholder="Firstname" [(ngModel)]="name" />
+          </td>
+          <td>
+            <input class="stext" type="text" placeholder="Lastname" [(ngModel)]="lname" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input class="stext" type="text" placeholder="Email" [(ngModel)]="email" />
+          </td>
+          <td>
+            <input class="stext" type="text" placeholder="Your Phone" [(ngModel)]="phone"/>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input class="stext1" type="text" placeholder="Nationality" [(ngModel)]="nationality" />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input class="stext1" type="text" placeholder="Current Country" [(ngModel)]="country" />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input class="stext1" type="text1" placeholder="Message" [(ngModel)]="message" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button type="button" class="clearfix" (click)="submit()">SUBMIT</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
