@@ -18,9 +18,10 @@
 
 .heading {
   color: black;
-  padding-bottom: 2em;
+  padding-bottom: 10px;
   text-align: center;
   font-weight: bold;
+  font-size: 4ch;
 }
 
 .input {
