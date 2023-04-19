@@ -1,16 +1,21 @@
 <div class = "container-fluid">
-    <p>we're looking for new homes</p>
+    <p class="heading"> we're looking for new homes </p>
     <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col" *ngFor="let cat of datacat">
-            <div class="card h-100" style="width: 30rem; height: 23rem" >
-                <img class = "card-img-top" [src]="cat.img">
-                <div class="card-body">
-                    <h5 class="card-title">{{cat.name}}</h5>
-                    <p class="card-text">{{cat.age}}</p>
-                    <p class="card-text">{{cat.description}}</p>
+            <a [href]="'/cats/'+cat.id">
+                <div class="card"  >
+                    <div class="imgbox">
+                        <div class="img"></div>
+                        <img class = "card-img-top" [src]="cat.img">
+                    </div>
+                    <div class="details">
+                        <h2 class="title">{{cat.name}}</h2>
+                        <span class="caption">{{cat.age}}</span>
+                    </div>
                 </div>
-                <a [href]="'/cats/'+cat.id"> Read my profile </a>
-            </div>
+            </a>
         </div>
     </div>
 </div>
+
+

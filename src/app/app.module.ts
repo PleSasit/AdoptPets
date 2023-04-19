@@ -17,6 +17,7 @@ import { LoginComponent } from './components/login/login.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { AdoptFormComponent } from './components/adopt-form/adopt-form.component';
 import { PetsProfileComponent } from './components/pets-profile/pets-profile.component';
+import { DonateComponent } from './components/donate/donate.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { PetsProfileComponent } from './components/pets-profile/pets-profile.com
     LoginComponent,
     SignupComponent,
     AdoptFormComponent,
-    PetsProfileComponent
+    PetsProfileComponent,
+    DonateComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,116 @@
+.a {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: white;
+  padding: 2.5em;
+  border-radius: 25px;
+  transition: 0.4s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.4) 1px 2px 2px;
+  width: 500px;
+}
+
+.a:hover {
+  transform: translateX(-0.5em) translateY(-0.5em);
+  border: 1px solid #171717;
+  box-shadow: 10px 10px 0px #666666;
+}
+.input_field {
+  border-radius: 5px;
+  border: 1px solid whitesmoke;
+  background-color: whitesmoke;
+  outline: none;
+  padding: 0.7em;
+  transition: 0.4s ease-in-out;
+}
+.input_field:hover {
+  box-shadow: 6px 6px 0px #969696, -3px -3px 10px #ffffff;
+}
+
+.input_field:focus {
+  background: #ffffff;
+  box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.a .btn {
+  margin-top: 2em;
+  align-self: center;
+  padding: 0.7em;
+  padding-left: 1em;
+  padding-right: 1em;
+  border-radius: 10px;
+  border: none;
+  color: black;
+  transition: 0.4s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.4) 1px 1px 1px;
+}
+.a .btn:hover {
+  box-shadow: 6px 6px 0px #969696, -3px -3px 10px #ffffff;
+  transform: translateX(-0.5em) translateY(-0.5em);
+}
+.a .btn:active {
+  transition: 0.2s;
+  transform: translateX(0em) translateY(0em);
+  box-shadow: none;
+}
+.heading {
+  color: black;
+  padding-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 4ch;
+}
+.input_label {
+  margin-right: 15px;
+}
+.c {
+  margin-bottom: 10pxs;
+  text-align: center;
+}
+.mn {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  border: 3px solid rgb(255, 255, 255);
+  cursor: pointer;
+  position: relative;
+  background-color: transparent;
+  text-decoration: none;
+  overflow: hidden;
+  z-index: 1;
+  font-family: inherit;
+}
+.mn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(252, 70, 100);
+  transform: translateX(-100%);
+  transition: all 0.3s;
+  z-index: -1;
+}
+
+.mn:hover::before {
+  transform: translateX(0);
+}
+.bt {
+  margin-left: 10px;
+  margin-bottom: 8px;
+  align-self: center;
+  padding: 0.7em;
+  padding-left: 1em;
+  padding-right: 1em;
+  border-radius: 10px;
+  border: none;
+  color: black;
+  transition: 0.4s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.4) 1px 1px 1px;
+}
+.bt:hover {
+    box-shadow: 6px 6px 0px #969696, -3px -3px 10px #ffffff;
+    transform: translateX(-0.5em) translateY(-0.5em);
+  }

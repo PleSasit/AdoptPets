@@ -5,6 +5,7 @@ import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http
 import { Pet } from '../../assets/data/petstructor';
 import { ContactStructure } from '../../assets/data/contact'
 import { AdoptFormStructure } from '../../assets/data/adoptForm'
+import { DonateStructure } from '../../assets/data/donate'
 
 
 @Injectable({
@@ -91,5 +92,10 @@ export class PetService {
     console.log(AdoptionForm);
     const headers = { 'AdoptionForm-type': 'application/json'}
     return this.httpClient.post<AdoptFormStructure>(this.REST_API+'/AdoptionForm',{...AdoptionForm}, { headers: headers});
+  }
+  createDonate(donate:object):Observable<DonateStructure> {
+    console.log(donate);
+    const headers = { 'donate-type': 'application/json'}
+    return this.httpClient.post<DonateStructure>(this.REST_API+'/donate',{...donate}, { headers: headers});
   }
 }

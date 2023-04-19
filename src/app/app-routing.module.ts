@@ -13,6 +13,7 @@ import { NavbarComponent } from './components/navbar/navbar.component'
 import { OthersComponent } from './components/others/others.component'
 import { SignupComponent } from './components/signup/signup.component'
 import { PetsProfileComponent } from './components/pets-profile/pets-profile.component'
+import { DonateComponent } from './components/donate/donate.component'
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: '/home' }, 
@@ -29,7 +30,7 @@ const routes: Routes = [
   { path: 'cats/:id', component: PetsProfileComponent },
   { path: 'dogs/:id', component: PetsProfileComponent },
   { path: 'others/:id', component: PetsProfileComponent },
-
+  { path: 'donate', component: DonateComponent },
 
 ];
 

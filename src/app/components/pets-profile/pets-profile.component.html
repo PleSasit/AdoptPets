@@ -1,16 +1,12 @@
-<div class="container-fluid my-4">
+<!-- <div class="container-fluid my-4">
     <div class="row">
-        <!-- <div class="col-2">
-            <a routerLink="/list" class="btn setbtn">
-                <img src="https://img.icons8.com/material-sharp/24/FFFFFF/return.png"/></a>
-        </div> -->
         <div class="col">
-            <p>Hello, I'am {{dataPet.name}}</p>
             <img [src]="dataPet.img" class="card-img-top" alt="pet">
         </div>
         <div class="col">
             <table>
                 <tbody>
+                    <p>Hello, I'am {{dataPet.name}}</p>
                     <tr>
                         <td><p>{{dataPet.age}}</p></td>
                     </tr>
@@ -34,4 +30,32 @@
             {{dataPet.Mystory}}
         </div>
     </div>
-</div> 
+</div>  -->
+<div class="container-fluid">
+    <div class="m-3 p-3">
+        <div class="m-3 p-3">
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="col-4">
+                    <div class="card" >
+                        <div class="card-img"></div>
+                        <img [src]="dataPet.img" class="card-img-top" alt="pet">
+                          <div class="card-info">
+                            <p class="text-name"><b>Hello, I'm {{dataPet.name}} </b></p>
+                            <p class="text-body"><b>Why I need a new home?</b> <br> {{dataPet.Why}}</p> 
+                            <p class="text-body"><b>My story</b> <br> {{dataPet.Mystory}}</p> 
+                            <button class="learn-more" routerLinkActive="active" routerLink="/adoptForm">
+                                <span class="circle" aria-hidden="true">
+                                <span class="icon arrow"></span>
+                                </span>
+                                <span class="button-text">Adopt {{dataPet.name}}</span>
+                            </button>
+                    </div> 
+                </div>
+                <div class="col-4"></div>
+            </div>
+        </div>    
+    </div>
+</div>
+
+
