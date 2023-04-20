@@ -1,4 +1,4 @@
-<header>
+<header style="font-size: 20px;">
     <a class="adopt" routerLinkActive="active" routerLink="/home">AdoptPets</a>
 <nav>
 
@@ -24,7 +24,10 @@
     </ul>
 </nav>
 
-    <a routerLinkActive="active" routerLink="/login"><button>Login</button></a>
+    <a *ngIf="_api.isLogin()"  aria-current="page" (click)="_api.logout()">Logout</a>  
+    <a *ngIf="!_api.isLogin()"  aria-current="page" routerLink="/login">Login</a>  
+
+    <!-- <a routerLinkActive="active" routerLink="/login"><button>Login</button></a> -->
 
 
 </header>
