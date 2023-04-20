@@ -1,1 +1,44 @@
-<p>contact works!</p>
+<!-- <div class="container">
+    <div align="center">
+        <div class="form">
+            <h1>Contact Us</h1>
+            <h2>We will get back to you as soon as we can! </h2>
+            <h2>For urgent case please contact our Call center team +0123456789</h2>
+    
+            <input class="input" type="text" placeholder="Name" [(ngModel)]="name"/>
+            <input class="input" type="text" placeholder="Email" [(ngModel)]="email"/>
+            <input class="input" type="text" placeholder="Phone" [(ngModel)]="phone"/>
+            <input class="input" type="text" placeholder="We'd love To Hear From You"[(ngModel)]="message"/>
+    
+            <div class="clearfix">
+                <button type="button" class="button" (click)="send()">Send</button>
+            </div>
+        </div>
+  </div>
+</div> -->
+  
+<div class="container-fluid">
+    <div class="m-3 p-3">
+        <div class="m-3 p-3">
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-4">
+                    <div class="container">
+                        <div class="form">
+                            <p class="heading">Contact us</p>
+                            <input class="input" type="text" placeholder="Name" [(ngModel)]="name"/>
+                            <input class="input" type="text" placeholder="Email" [(ngModel)]="email"/>
+                            <input class="input" type="text" placeholder="Phone" [(ngModel)]="phone"/>        
+                            <textarea class="input" name="message" placeholder="We'd love To Hear From You" [(ngModel)]="message" ></textarea>
+                            <button type="submit" class="btn" (click)="send()">Send</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  

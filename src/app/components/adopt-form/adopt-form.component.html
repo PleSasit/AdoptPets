@@ -1,1 +1,26 @@
-<p>adopt-form works!</p>
+<div class="container-fluid">
+  <div class="m-3 p-3">
+    <div class="m-3 p-3">
+      <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4">
+          <div class="container">
+            <div class="form">
+                <p class="heading">Adoption Form</p>
+                <input class="input" type="text" placeholder="Name" [(ngModel)]="name"/>
+                <input class="input" type="text" placeholder="Last name" [(ngModel)]="lname"/>
+                <input class="input" type="text" placeholder="Email" [(ngModel)]="email"/>
+                <input class="input" type="text" placeholder="Phone" [(ngModel)]="phone"/>     
+                <input class="input" type="text" placeholder="Nationality" [(ngModel)]="nationality"/>  
+                <input class="input" type="text" placeholder="Current Country" [(ngModel)]="country"/>
+                <textarea class="input" name="message" placeholder="Tell me about your background" [(ngModel)]="message" ></textarea>
+                <button type="submit" class="btn" (click)="submit()">SUBMIT</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-4"></div>
+      </div>
+    </div>
+  </div>
+</div>
+

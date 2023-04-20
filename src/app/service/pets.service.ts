@@ -3,6 +3,9 @@ import { catchError, map } from 'rxjs/operators'
 import { Observable, throwError } from 'rxjs';
 import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http';
 import { Pet } from '../../assets/data/petstructor';
+import { ContactStructure } from '../../assets/data/contact'
+import { AdoptFormStructure } from '../../assets/data/adoptForm'
+import { DonateStructure } from '../../assets/data/donate'
 
 
 @Injectable({
@@ -36,14 +39,15 @@ export class PetService {
   }
 
   //get single object
-  GetPet(id: any): Observable<any> {
-    let API_URL = `${this.REST_API}/read-pet/${id}`;
-    return this.httpClient.get(API_URL, { headers: this.httpHeaders })
-    .pipe(map((res: any) => {
-      return res || {}
-    }),
-    catchError(this.handleError)
-    )
+  getOne(
+    obj: {
+      path: string
+      id: string
+    },
+    queryKey: [] = [],
+    queryValue: [] = []
+  ): Observable<any> {
+    return this.httpClient.get<any>(`${this.REST_API}/${obj.path}/${obj.id}`)
   }
 
   // update
@@ -78,4 +82,20 @@ export class PetService {
     return throwError(errorMessage);
   }
 
+  createContact(contact:object):Observable<ContactStructure> {
+    console.log(contact);
+    const headers = { 'contact-type': 'application/json'}
+    return this.httpClient.post<ContactStructure>(this.REST_API+'/contact',{...contact}, { headers: headers});
+
+  }
+  createAdoptionForm(AdoptionForm:object):Observable<AdoptFormStructure> {
+    console.log(AdoptionForm);
+    const headers = { 'AdoptionForm-type': 'application/json'}
+    return this.httpClient.post<AdoptFormStructure>(this.REST_API+'/AdoptionForm',{...AdoptionForm}, { headers: headers});
+  }
+  createDonate(donate:object):Observable<DonateStructure> {
+    console.log(donate);
+    const headers = { 'donate-type': 'application/json'}
+    return this.httpClient.post<DonateStructure>(this.REST_API+'/donate',{...donate}, { headers: headers});
+  }
 }

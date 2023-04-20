@@ -1,0 +1,53 @@
+<div class="container-fluid">
+  <div class="m-3 p-3">
+    <div class="m-3 p-3">
+      <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4">
+                <div class="container">
+                    <div class="a">
+                        <div class="c">
+                            <p class="heading"> Donate</p>
+                            <button class="bt" type="button" >Onetime</button>
+                            <button class="bt" type="button" >Monthly</button> <br>
+                            <button class="mn" type="button" >150</button>
+                            <button class="mn" type="button" >350</button> <br>
+                            <button class="mn" type="button" >550</button>
+                            <button class="mn" type="button" >750</button> <br>
+                            <input
+                            type="text"
+                            class="input_field"
+                            placeholder="฿XXXX"
+                            [(ngModel)]="money"/>
+                        </div>
+                        
+                        <table class="center">
+                            <tbody style="width: 100%">
+                                <tr> 
+                                    <td colspan="2" class="heading">Enter Credit Card</td>
+                                </tr>
+                                <tr>
+                                    <td><label for="password_field" class="input_label">Card holder full name: </label></td>
+                                    <td><input id="password_field" class="input_field" type="text" name="input-name" title="Inpit title" placeholder="Enter your full name" [(ngModel)]="cardH"/></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="password_field" class="input_label">Card Number: </label></td>
+                                    <td><input id="password_field" class="input_field" type="tel" name="input-name" title="Inpit title" placeholder="0000 0000 0000 0000" maxlength="16" [(ngModel)]="cardNum"/></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="password_field" class="input_label">Expiry Date: </label></td>
+                                    <td><input id="password_field" class="input_field" type="text" name="input-name" title="Expiry Date" placeholder="01/23" [(ngModel)]="exp"/> 
+                                </tr>
+                                <tr>
+                                    <td><label for="password_field" class="input_label">CVV: </label></td> 
+                                    <td><input id="password_field" class="input_field" type="tel" name="cvv" title="CVV" placeholder="CVV" [(ngModel)]="cvv"/></td>
+                            </tbody>
+                        </table>
+                    <button class="btn" (click)="donate()">Donate</button>
+                    </div>
+                </div>
+            <div class="col-4"></div>
+            </div>
+        </div>
+    </div>
+</div>

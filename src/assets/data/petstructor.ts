@@ -1,7 +1,9 @@
 export class Pet {
-    _id!: String;
-    name!: String;
-    age!: String;
-    description!: String;
-    img!: String;
+    id?: String;
+    name?: String;
+    age?: String;
+    description?: String;
+    img?: String;
+    Mystory?: String;
+    Why?: String;
   }

@@ -1,1 +1,19 @@
-<p>others works!</p>
+<p class="heading"> Other Pet Adoption </p>
+<div class = "container-fluid">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col" *ngFor="let oth of dataOth">
+            <a [href]="'/others/'+oth.id">
+                <div class="card"  >
+                    <div class="imgbox">
+                        <div class="img"></div>
+                        <img class = "card-img-top" [src]="oth.img">
+                    </div>
+                    <div class="details">
+                        <h2 class="title">{{oth.name}}</h2>
+                        <span class="caption">{{oth.age}}</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
